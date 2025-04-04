@@ -81,11 +81,13 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
 # Use only the main highlighter
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
