@@ -83,6 +83,27 @@ alias c='clear'
 
 # Shell integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Use only the main highlighter
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
+
+# Muted / dull color styles
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
+
+# Slightly brighter muted colors
+ZSH_HIGHLIGHT_STYLES[comment]='fg=245'                  # Light gray
+ZSH_HIGHLIGHT_STYLES[command]='fg=48'                  # Soft cyan
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=81'                   # Brighter teal
+ZSH_HIGHLIGHT_STYLES[function]='fg=114'                 # Medium green
+ZSH_HIGHLIGHT_STYLES[alias]='fg=139'                    # Dusty purple
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=179'            # Muted yellow
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=180'                 # Pale yellow
+ZSH_HIGHLIGHT_STYLES[path]='fg=252'                     # Light gray
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=109'   # Soft green
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=186'   # Creamy yellow
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160,bold'       # Mild red
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=240'         # Subtle separator
+
