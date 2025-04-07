@@ -24,3 +24,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 p10k configure
 
 then source ~/.zshrc
+
+installing yazi
+
+dependenciec
+
+sudo apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep imagemagick
+
+sudo snap install yazi --classic
