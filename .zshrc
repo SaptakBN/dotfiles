@@ -97,7 +97,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
 
 # Slightly brighter muted colors
 ZSH_HIGHLIGHT_STYLES[comment]='fg=245'                  # Light gray
-ZSH_HIGHLIGHT_STYLES[command]='fg=48'                  # Soft cyan
+ZSH_HIGHLIGHT_STYLES[command]='fg=48'                   # Soft cyan
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=81'                   # Brighter teal
 ZSH_HIGHLIGHT_STYLES[function]='fg=114'                 # Medium green
 ZSH_HIGHLIGHT_STYLES[alias]='fg=139'                    # Dusty purple
